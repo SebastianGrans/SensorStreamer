@@ -1,18 +1,16 @@
-![Header](media/main.png)
+<!-- ![Header](media/main.png) --> 
 
-# SensorStreamer
+# SensorStreamer2
 
-Our phones are full of useful sensors - accelerometer, gyroscope,
-magnetometer... Every hacker have surely experienced the need to test something
-with one of these sensors. Usually you take Arduino with a sensor breakout board
-and you write a small piece of code, which send data to serial line.
+**This is a fork of the original app.**
 
-But not always you have the sensors you need and the wires are sometimes a
-limitation. Here comes SensorStreamer - lightweight Android app, which can log
-sensor data and send them over network to your computer, where you can analyze
-them e.g. with a simple Python script.
+The goal of my fork is to also implement 6DOF Pose estimation.
 
-You can download the app at the Play Store: [SensorStreamer](https://play.google.com/store/apps/details?id=cz.honzamrazek.sensorstreamer)
+Here's a demo where I use this to rotate objects in Blender. 
+https://www.youtube.com/watch?v=B_9xWQpGzn4
+
+
+The original app (not made by me) is available at the Play Store: [SensorStreamer](https://play.google.com/store/apps/details?id=cz.honzamrazek.sensorstreamer)
 
 ## Supported Features
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SensorStreamer</string>
+    <string name="app_name">SensorStreamer2</string>
     <string name="stream">Stream</string>
     <string name="manage_connections">Manage Connections</string>
     <string name="manage_packets">Manage Packets</string>
@@ -43,6 +43,7 @@
     <string name="light">Light</string>
     <string name="linear_acceleration">Linear acceleration</string>
     <string name="rotation_vector">Rotation vector</string>
+    <string name="pose_vector">Pose vector</string>
     <string name="relative_humidity">Relative humidity</string>
     <string name="proximity">Proximity</string>
     <string name="pressure">Pressure</string>

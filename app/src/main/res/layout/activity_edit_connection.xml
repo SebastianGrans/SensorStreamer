@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cz.honzamrazek.sensorstreamer.activities.EditConnectionActivity">
+    tools:context="no.grans.sensorstreamer.activities.EditConnectionActivity">
     <!-- Action bar -->
     <include
         layout="@layout/toolbar"
@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="@dimen/text_margin"
-        tools:context="cz.honzamrazek.sensorstreamer.activities.EditConnectionActivity">
+        tools:context="no.grans.sensorstreamer.activities.EditConnectionActivity">
 
         <TextView
             android:text="@string/connection_name"

@@ -1,16 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
     defaultConfig {
-        applicationId "cz.honzamrazek.sensorstreamer"
-        minSdkVersion 16
-        targetSdkVersion 26
+        applicationId "no.grans.sensorstreamer"
+        minSdkVersion 28
+        targetSdkVersion 30
         multiDexEnabled true
         versionCode 10100
         versionName "1.1"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
         release {
@@ -22,21 +22,20 @@ android {
     }
 }
 
-apply plugin: 'com.neenbedankt.android-apt'
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
+    //compile fileTree(include: ['*.jar'], dir: 'libs')
+    //androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    //    exclude group: 'com.android.support', module: 'support-annotations'
+    //})
 
-    compile 'com.android.support:appcompat-v7:25.3.0'
-    compile 'com.android.support:design:25.3.0'
-    compile 'com.android.support:support-v4:25.3.0'
-    compile 'com.google.android.gms:play-services:10.0.1'
-    compile 'com.android.support:recyclerview-v7:25.3.0'
-    compile 'com.google.code.gson:gson:2.4'
-    compile 'com.android.support:multidex:1.0.1'
-    testCompile 'junit:junit:4.12'
+    // implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    //compile 'com.android.support:multidex:1.0.1'
+    //testCompile 'junit:junit:4.12'
 
 }
